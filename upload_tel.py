@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Telegram Bot Configuration
-TOKEN = "7567782899:AAE13__OXTxaVaIqi8eQBiN6X0x6mhzByRk"  # Replace with your bot token
+TOKEN = "token"  # Replace with your bot token
 CHANNEL_ID = "@umarjamilai"  # Replace with your channel username or ID
 
 async def upload_video(bot, video_path):
