@@ -6,7 +6,7 @@ A comprehensive toolset for downloading YouTube videos with subtitles, embedding
 
 - Downloads videos from YouTube channels/playlists with automatic subtitle extraction
 - Supports configurable video quality (default: 720p max) 
-- Embeds subtitles directly into video files for easier viewing
+- Embeds subtitles directly into video files for easier viewing 
 - Converts videos to MP4 format with optimized encoding settings
 - Automatically uploads processed videos to a Telegram channel
 
