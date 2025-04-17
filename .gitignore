@@ -1,2 +1,4 @@
 videos/*
 output/*
+*.mp4
+*.srt
