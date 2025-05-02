@@ -23,7 +23,10 @@ def trim_video(input_path: str, start_time: str, end_time: str, output_path: str
 
     if output_path is None:
         base, ext = os.path.splitext(input_path)
-        output_path = f"{base}_trimmed{ext}"
+        # Replace colons with underscores for a valid filename
+        start_time_clean = start_time.replace(":", "_")
+        end_time_clean = end_time.replace(":", "_")
+        output_path = f"{base}_{start_time_clean}to{end_time_clean}_trimmed{ext}"
 
     cmd = [
         "ffmpeg",
@@ -47,4 +50,5 @@ def trim_video(input_path: str, start_time: str, end_time: str, output_path: str
     return output_path
 
 
-trim_video("full.mp4", "00:44:43", "00:44:53")
+# Example usage
+trim_video("full.mp4", "00:22:41", "00:23:00")
