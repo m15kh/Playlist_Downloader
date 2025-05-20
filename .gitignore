@@ -2,3 +2,6 @@ videos/*
 output/*
 *.mp4
 *.srt
+*.wav
+*.json
+*.txt
